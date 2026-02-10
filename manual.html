@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ScheduleMVP User Manual</title>
+  <style>
+    :root { --bg:#0b0f14; --card:#121925; --text:#e6edf3; --muted:#9fb0c0; --link:#6cb6ff; --accent:#ff7a59; }
+    body { margin:0; font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif; background:linear-gradient(180deg,#0b0f14,#0b0f14 40%,#0e1520); color:var(--text); }
+    .wrap { max-width: 920px; margin: 0 auto; padding: 40px 20px; }
+    .card { background: rgba(18,25,37,.9); border: 1px solid rgba(255,255,255,.06); border-radius: 16px; padding: 24px; box-shadow: 0 10px 30px rgba(0,0,0,.35); }
+    h1 { margin: 0 0 6px; font-size: 32px; letter-spacing: .2px; }
+    h2 { margin: 22px 0 10px; font-size: 18px; }
+    h3 { margin: 18px 0 8px; font-size: 16px; }
+    p, li { line-height: 1.65; color: var(--muted); }
+    a { color: var(--link); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .tag { display:inline-block; font-size: 12px; padding: 4px 10px; border-radius: 999px; background: rgba(255,122,89,.14); border:1px solid rgba(255,122,89,.25); color: #ffd7ce; }
+    .toc { background: rgba(255,255,255,.03); border: 1px solid rgba(255,255,255,.06); border-radius: 14px; padding: 14px 16px; margin-top: 14px; }
+    .toc ul { margin: 10px 0 0; padding-left: 18px; }
+    .note { background: rgba(108,182,255,.10); border: 1px solid rgba(108,182,255,.18); border-radius: 12px; padding: 12px 14px; color: var(--text); margin: 12px 0; }
+    .note p { color: var(--text); margin: 0; }
+    code { background: rgba(255,255,255,.06); padding: 2px 6px; border-radius: 6px; color: var(--text); }
+    footer { margin-top: 24px; font-size: 13px; color: var(--muted); }
+    .toplinks { margin-top: 6px; font-size: 14px; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <span class="tag">User Manual</span>
+      <h1>ScheduleMVP Manual</h1>
+      <div class="toplinks">
+        <a href="./">← Support Home</a>
+        &nbsp;•&nbsp;
+        <a href="privacy.html">Privacy Policy</a>
+      </div>
+
+      <p>This guide covers the core workflows for both Admins and Employees.</p>
+
+      <div class="note">
+        <p>Need help? Email <a href="mailto:schedulemvp9@gmail.com">schedulemvp9@gmail.com</a></p>
+      </div>
+
+      <div class="toc">
+        <strong>Quick links</strong>
+        <ul>
+          <li><a href="#smart-week">Generate a Smart Week</a></li>
+          <li><a href="#swaps">How swaps work</a></li>
+          <li><a href="#time-off">Time-off requests</a></li>
+          <li><a href="#notifications">Push notifications</a></li>
+        </ul>
+      </div>
+
+      <h2 id="smart-week">Generate a Smart Week (Smart Draft)</h2>
+      <ol>
+        <li>Go to <strong>Schedule</strong></li>
+        <li>Tap <strong>Smart Week</strong></li>
+        <li>Select your <strong>Location</strong> and confirm the <strong>week range</strong></li>
+        <li>Pick a shift template (start/end) and choose which weekdays to include</li>
+        <li>Under each role, set <strong>Needed</strong> (how many people you need per day)</li>
+        <li>Tap <strong>Smart Draft</strong></li>
+        <li>Review the draft, then tap <strong>Create</strong> to add the shifts to your schedule</li>
+      </ol>
+      <p><strong>Tips</strong></p>
+      <ul>
+        <li>If a role has no eligible employees, Smart Draft will leave open slots.</li>
+        <li>Smart Draft won’t overwrite days that already have shifts.</li>
+        <li>Smart scheduling avoids double-booking employees in the same time window.</li>
+      </ul>
+
+      <h2 id="swaps">How swaps work</h2>
+      <p>Swaps are a 2-step approval to prevent confusion and keep managers in control.</p>
+      <ol>
+        <li><strong>Employee A requests a swap</strong>
+          <ul>
+            <li>Picks <em>their</em> shift to trade away</li>
+            <li>Picks a coworker</li>
+            <li>Picks a <strong>specific coworker shift</strong> they want in return</li>
+          </ul>
+        </li>
+        <li><strong>Coworker accepts/declines</strong>
+          <ul>
+            <li>If accepted, it goes to the manager for final approval</li>
+          </ul>
+        </li>
+        <li><strong>Manager approves/denies</strong>
+          <ul>
+            <li>If approved, ScheduleMVP swaps who is assigned to the two existing shifts</li>
+          </ul>
+        </li>
+      </ol>
+      <p><strong>Swap rules</strong></p>
+      <ul>
+        <li>Swaps must be <strong>same location</strong>.</li>
+        <li>Swap choices only show shifts that <strong>don’t overlap</strong> the requester’s existing schedule.</li>
+      </ul>
+
+      <h2 id="time-off">Time-off requests</h2>
+      <p><strong>Employees</strong>: My Schedule → <strong>Request time off</strong></p>
+      <p><strong>Managers</strong>: Requests → <strong>Time Off</strong> → Approve/Deny</p>
+
+      <h2 id="notifications">Push notifications</h2>
+      <p>In the app: Settings → Notifications → <strong>Preferences</strong></p>
+      <ul>
+        <li>Time-off requests</li>
+        <li>Time-off approved/denied</li>
+        <li>New messages</li>
+        <li>Schedule changes</li>
+      </ul>
+      <p>Note: iOS also has a global switch in iPhone Settings → Notifications → ScheduleMVP.</p>
+
+      <footer>
+        <p>© 2026 ScheduleMVP</p>
+      </footer>
+    </div>
+  </div>
+</body>
+</html>
